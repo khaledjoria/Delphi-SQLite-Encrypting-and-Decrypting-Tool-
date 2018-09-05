@@ -12,16 +12,6 @@ becomes more integrated and once coded, it is better to continue with your
 encrypted code as it requires a bit of recoding to compile again as a non-
 encrypted setup.
 
-Here is an example of production styled code used in the Data module for SQLite.
-The connection definitions use the ‘**params**’ method to hard code the
-connection. It allows for the connection to find the database in your
-development folder when running in Debug mode and then in Non-Debug mode it will
-look for the Database in the folder where you would deploy it to. As this is
-Pre- XE5 level coding, it is not targeting mobile ( **TPath** is not used in
-this instance) but targeting a Windows X64 and X86 set-up. There are many other
-options to select such as :- aes-128 ,aes-192, aes-256,aes-ctr-128 ,aes-ctr-192
-, aes-ctr-256 ,aes-ecb-128 , aes-ecb-192 , aes-ecb-256.
-
 I created a simple Encrypt / Unencrypt and Password Re-name tool using the
 provided components in Delphi. As I found it useful to me, it would be useful to
 other developers.
